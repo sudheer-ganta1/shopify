@@ -5,105 +5,105 @@ const mensCollection = [
 
     price: 1499,
     image:
-      "https://i.pinimg.com/736x/60/8c/26/608c26082272cbb18c8446a4c65ac1b3.jpg",
+      "Images/male/kurta.png",
   },
   {
     id: 2,
     title: "Sherwani Set",
 
     price: 5499,
-    image: "",
+    image: "Images/male/sherwani.png",
   },
   {
     id: 3,
     title: "Black Pathani Kurta",
 
     price: 1899,
-    image: "",
+    image: "Images/male/black.png",
   },
   {
     id: 4,
     title: "Nehru Jacket Kurta Set",
 
     price: 2399,
-    image: "",
+    image: "Images/male/nehru.png",
   },
   {
     id: 5,
     title: "Dhoti Kurta Set",
 
     price: 1699,
-    image: "",
+    image: "images/male/dhoti.png",
   },
   {
     id: 6,
     title: "Indo-Western Outfit",
 
     price: 2799,
-    image: "",
+    image: "images/male/indo.png",
   },
   {
     id: 7,
     title: "Designer Sherwani",
 
     price: 6999,
-    image: "",
+    image: "images/male/designer.png",
   },
   {
     id: 8,
     title: "Printed Cotton Kurta",
 
     price: 1199,
-    image: "",
+    image: "images/male/printed.png",
   },
   {
     id: 9,
     title: "Bandhgala Suit",
 
     price: 3599,
-    image: "",
+    image: "images/male/suit.png",
   },
   {
     id: 10,
     title: "Angrakha Kurta",
 
     price: 2299,
-    image: "",
+    image: "images/male/a.png",
   },
   {
     id: 11,
     title: "Festive Kurta",
 
     price: 1399,
-    image: "",
+    image: "images/male/festive.png",
   },
   {
     id: 12,
     title: "Wedding Kurta Set",
 
     price: 3199,
-    image: "",
+    image: "images/male/wedding.png",
   },
   {
     id: 13,
     title: "Floral Printed Kurta",
 
     price: 1299,
-    image: "",
+    image: "images/male/floral.png",
   },
   {
     id: 14,
     title: "Velvet Indo-Western",
 
     price: 3999,
-    image: "",
+    image: "images/male/velvet.png",
   },
   {
     id: 15,
     title: "Pastel Kurta Churidar",
 
     price: 1599,
-    image: "",
+    image: "images/male/pastel.png",
   },
 ];
 
