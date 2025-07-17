@@ -1,0 +1,536 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --pc: #2c3e50;
+  --sc: red;
+  --text: orange;
+  --background: lightgrey;
+  --textprimary: #333333;
+  --textlight: #ffffff;
+}
+
+header {
+  background-color: var(--pc);
+  height: 100px;
+  width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+div.newname {
+  margin: 10px 10px 0 10px;
+  padding: 10px;
+
+  font-size: 35px;
+}
+
+.newname::first-letter {
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  color: rgba(255, 255, 255, 0.849);
+  transition: color 0.3s ease;
+}
+
+.newname:hover::first-letter {
+  color: rgb(11, 197, 204);
+}
+
+.newname {
+  color: rgb(17, 17, 17);
+  transition: color 0.3s ease;
+}
+
+.newname:hover {
+  color: #ffffff;
+}
+
+div.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ol {
+  display: flex;
+  padding: 20px;
+  gap: 50px;
+  list-style: none;
+  font-size: 20px;
+  color: white;
+}
+nav ol li::first-letter {
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  color: #95d5b2;
+}
+
+nav ol li:hover {
+  text-decoration: underline;
+  color: #95d5b2;
+  transition: color 0.3s ease;
+}
+/*                                 new area of boss                         */
+div.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  background-color: var(--background);
+}
+
+div .h1 {
+  font-family: "PT Serif", serif;
+  font-size: 40px;
+  padding: 10px;
+}
+
+div .h1::first-letter {
+  font-size: 90px;
+  font-family: "Dancing Script", cursive;
+  color: #95d5b2;
+}
+
+div.new2:hover {
+  display: block;
+}
+
+div.para {
+  padding: 20px;
+  font-size: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+p.gossip {
+  font-size: 20px;
+  text-align: center;
+}
+
+p.gossip:hover {
+  color: #fafeff90;
+  transition: color 0.3s ease;
+}
+
+button.button {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 1000px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+button.button::after {
+  content: "";
+  position: absolute;
+  border-radius: 1000px;
+  z-index: -1;
+  background-image: linear-gradient(135deg, #434343, #2c3e50);
+  height: 100%;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b2a38;
+  box-shadow: 0 4px 12px rgba(80, 44, 69, 0.3);
+  z-index: 0;
+
+  transition: box-shadow 0.3s ease;
+}
+
+/*  new section        =================================================>==========================>===========> */
+
+div.maincard {
+  min-height: 500px;
+  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.shopnow {
+  text-align: center;
+  font-size: 35px;
+  padding: 20px;
+}
+
+div.card {
+  height: 380px;
+  width: 250px;
+  border: 1px solid;
+  margin: 30px;
+  transition: box-shadow 0.3s ease;
+  background-color: var(--background);
+}
+
+div.card:hover {
+  transform: scale(1);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+div img {
+  height: 220px;
+  width: 100%;
+  background: none;
+  object-fit: cover;
+
+  position: relative;
+}
+
+div span.sticky {
+  font-size: 11px;
+  font-weight: 60;
+  height: 50px;
+  width: 60px;
+  border-radius: 0 0px 20px 25px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-align: center;
+
+
+  position: absolute;
+  padding: 10px;
+  z-index: 1;
+}
+
+div span.sticky1 {
+  font-size: 25px;
+
+  height: 40px;
+  width: 50px;
+  border-radius: 0 0px 20px 25px;
+  background-color: whitesmoke;
+  text-align: center;
+
+  position: absolute;
+
+  z-index: 1;
+}
+
+h4.men {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  margin: 10px;
+}
+
+div .buttondiv {
+  display: flex;
+  justify-content: center;
+}
+
+button.exploremore {
+  padding: 10px 15px;
+  border-radius: 1000px;
+  color: black;
+  border: 1px solid black;
+}
+button.exploremore:hover {
+  color: white;
+}
+
+/*        ===================================================================================================== */
+
+.feautred-products0 {
+  height: 100vh;
+  background-color: lightgrey;
+}
+.feautred-products1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+div.products {
+  margin: 10px;
+  height: 270px;
+  width: 200px;
+  border: 1px solid black;
+
+  transition: box-shadow 0.3s ease;
+}
+div.products:hover {
+  transform: scale(1);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+div .newimg {
+  height: 180px;
+  object-fit: cover;
+
+  width: 100%;
+}
+
+div .exploremore1 {
+  margin: 10px;
+  padding: 5px 05px;
+  border-radius: 100px;
+  color: black;
+  border: 1px solid black;
+}
+
+div .exploremore1:hover {
+  color: white;
+  box-shadow: 0 4px 12px rgba(80, 44, 69, 0.3);
+}
+
+div .men1 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* ============================================================================== new */
+
+
+/* ============================================== */
+/* Main bottom section background */
+.bottom-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  color: var(--textprimary);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Deal of the Day */
+.deal-container {
+  background-color: #e85c36;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.deal-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.deal-text p {
+  font-size: 16px;
+}
+
+.deal-btn {
+  background-color: white;
+  color: #2c3e50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1000px;
+  font-weight: 600;
+  font-family: "Segoe UI", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deal-btn:hover {
+  background-color: #f4f4f4;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newsletter h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 1000px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.newsletter-form button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 1000px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #1b2a38;
+}
+
+/* Footer Columns */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+
+@media (max-width: 600px) {
+  header {
+    height: 100px;
+    width: 100%;
+  }
+
+  ol {
+    display: none;
+  }
+
+  nav::after {
+    content: "☰";
+    color: white;
+    font-size: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  .para h1 {
+    font-size: 2rem;
+  }
+
+  div.products {
+    margin: 20px;
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .feautred-products0 {
+    height: 100%;
+  }
+
+  div.card {
+    height: 380px;
+    width: 100%;
+    border: 1px solid;
+    margin: 30px;
+    transition: box-shadow 0.3s ease;
+    background-color: var(--background);
+  }
+  div .exploremore1 {
+    padding: 10px 15px;
+    border-radius: 1000px;
+    color: black;
+    border: 1px solid black;
+  }
+
+  div .exploremore1:hover {
+    color: white;
+  }
+  div .men1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  div .deals {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 35px;
+  }
+  .button1 {
+    margin-bottom: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 300px;
+  }
+  div.maincard2 {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 100%;
+  }
+  div .para1 {
+    text-align: center;
+  }
+  .deal-container,
+  .newsletter-form {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .deal-btn {
+    margin-top: 10px;
+  }
+
+  .footer-column {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
