@@ -132,3 +132,5 @@ mensCollection.forEach((collection) => {
 
   a.appendChild(card);
 });
+
+
