@@ -107,28 +107,44 @@ const mensCollection = [
 ];
 
 const a = document.getElementById("mens-collection");
+const search = document.getElementById("search");
 
-mensCollection.forEach((collection) => {
-  const card = document.createElement("div");
-  card.classList.add("card");
+function showItems(list) {
+  a.innerHTML = ""; // Clear previous items
 
-  card.innerHTML = `
-  
- 
-  <div class="sticky1">&#x2661; </div>
- 
-  <img class="product-image" src="${collection.image}" alt="${collection.title}" />
-  
-   <h1 class="product-title">${collection.title}</h1>
-  
-  <h5 class="product-price">₹${collection.price}</h5>
-  <div class="buttons">
-        <button class="newbutton">buy now</button>
-     <button class="newbutton">add to cart</button>
-    </div>
+  if (list.length === 0) {
+    a.innerHTML = `<h2 style="text-align:center; margin: 20px;">No results found </h2>`;
+    return;
+  }
 
-`;
+  list.forEach((collection) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
 
-  a.appendChild(card);
+    card.innerHTML = `
+      <div class="sticky1">&#x2661;</div>
+      <img class="product-image" src="${collection.image}" alt="${collection.title}" />
+      <h1 class="product-title">${collection.title}</h1>
+      <h5 class="product-price">₹${collection.price}</h5>
+      <div class="buttons">
+        <button class="newbutton">Buy Now</button>
+        <button class="newbutton">Add to Cart</button>
+      </div>
+    `;
+
+    a.appendChild(card);
+  });
+}
+
+
+search.addEventListener("input", () => {
+  const keyword = search.value.toLowerCase();
+
+  const filtered = mensCollection.filter((item) =>
+    item.title.toLowerCase().startsWith(keyword)
+  );
+
+  showItems(filtered);
 });
 
+showItems(mensCollection);

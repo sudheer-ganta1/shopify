@@ -26,7 +26,12 @@ body {
   transition: box-shadow 0.3s ease;
   position: relative;
 }
-
+.sudheer{
+  
+  padding: clamp(5px,2vw ,2px);
+  font-size: 35px;
+  font-family: 'Times New Roman', Times, serif;
+}
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -135,6 +140,16 @@ body {
   text-transform: uppercase;
   color: #333333;
 }
+.input {
+   
+          width: 600px;
+          padding: 10px;
+          margin: 20px;
+          font-size: 16px;
+          border-radius: 1000px;
+          border: 1px solid #ccc;
+        
+}
 
 @media (max-width: 600px) {
   .nav-main {
@@ -159,5 +174,12 @@ body {
     border-radius: 1000px;
 
     color: #a12d2d;
+  }
+  .sudheer{
+    font-size: 20px;
+   
+  }
+  .input{
+    width: 200px;
   }
 }
